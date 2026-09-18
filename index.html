@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1117">
+  <title>Dasun | Expense Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="appShell" class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">DS</div>
+        <div>
+          <div class="brand-name">Dasun</div>
+          <div class="brand-sub">Expense Tracker</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span> Dashboard</button>
+        <button class="nav-item" data-view="transactions"><span>↕</span> Transactions</button>
+        <button class="nav-item" data-view="accounts"><span>▣</span> Accounts</button>
+        <button class="nav-item" data-view="cards"><span>▤</span> Credit Cards</button>
+        <button class="nav-item" data-view="debts"><span>◇</span> Debts & Pawn</button>
+        <button class="nav-item" data-view="analytics"><span>◒</span> Analytics</button>
+        <button class="nav-item" data-view="settings"><span>⚙</span> Settings</button>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="quickAddSide" class="primary-btn full">＋ Add transaction</button>
+        <div class="storage-note"><span class="status-dot"></span> Saved in this browser</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow" id="viewEyebrow">Personal finance</div>
+          <h1 id="viewTitle">Dashboard</h1>
+        </div>
+        <div class="top-actions">
+          <button id="quickAdd" class="primary-btn">＋ Add transaction</button>
+        </div>
+      </header>
+
+      <section id="view-dashboard" class="view active-view"></section>
+      <section id="view-transactions" class="view"></section>
+      <section id="view-accounts" class="view"></section>
+      <section id="view-cards" class="view"></section>
+      <section id="view-debts" class="view"></section>
+      <section id="view-analytics" class="view"></section>
+      <section id="view-settings" class="view"></section>
+    </main>
+  </div>
+
+  <div id="modalRoot"></div>
+  <input type="file" id="importInput" accept="application/json,.json" hidden>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1150 @@
+window.EXPENSE_TRACKER_SEED = {
+  "version": 1,
+  "currency": "LKR",
+  "source": "Dasun Clean Expense Tracker.xlsx",
+  "accounts": [
+    {
+      "name": "Cash",
+      "openingBalance": 1540.0
+    },
+    {
+      "name": "Commercial Bank",
+      "openingBalance": 38399.7
+    },
+    {
+      "name": "BOC",
+      "openingBalance": 36184.42
+    },
+    {
+      "name": "Dialog Pay",
+      "openingBalance": 288.18
+    },
+    {
+      "name": "DFCC Bank",
+      "openingBalance": 2306.28
+    },
+    {
+      "name": "HNB",
+      "openingBalance": 806.54
+    },
+    {
+      "name": "People's Bank",
+      "openingBalance": 5254.2
+    },
+    {
+      "name": "Frimi",
+      "openingBalance": 1689.39
+    }
+  ],
+  "creditCards": [
+    {
+      "name": "DFCC Credit Card",
+      "openingOutstanding": 179139.43,
+      "creditLimit": 200000.0
+    },
+    {
+      "name": "HNB Credit Card",
+      "openingOutstanding": 24533.25,
+      "creditLimit": 30000.0
+    },
+    {
+      "name": "Commercial Bank Credit Card",
+      "openingOutstanding": 124666.76,
+      "creditLimit": 150000.0
+    }
+  ],
+  "debts": [
+    {
+      "item": "Gold Coin Pawn",
+      "principal": 195000.0,
+      "monthlyInterestRate": 0.013,
+      "plannedMonthlyPayment": 5000.0,
+      "notes": "Update principal after each payment if the lender's interest calculation differs."
+    },
+    {
+      "item": "The actual interest may be calculated daily or on another basis by the pawn provider, so use the actual statement/receipt to update the remaining principal.",
+      "principal": 0.0,
+      "monthlyInterestRate": 0.0,
+      "plannedMonthlyPayment": 0.0,
+      "notes": null
+    }
+  ],
+  "categories": {
+    "expense": [
+      "Food",
+      "Groceries",
+      "Eating Out",
+      "Coffee",
+      "Fuel",
+      "Transport",
+      "Salon & Grooming",
+      "Gym",
+      "Mobile",
+      "Internet",
+      "Electricity",
+      "Water",
+      "Subscriptions",
+      "Shopping",
+      "Clothing",
+      "Entertainment",
+      "Travel",
+      "Medical",
+      "Personal Care",
+      "Family",
+      "Gifts",
+      "Work",
+      "Other",
+      "KOKO / BNPL",
+      "Mintpay / BNPL"
+    ],
+    "income": [
+      "Salary",
+      "Classes",
+      "Freelance",
+      "Other Income"
+    ],
+    "transactions": [
+      "Salary",
+      "Classes",
+      "Freelance",
+      "Other Income",
+      "Food",
+      "Groceries",
+      "Eating Out",
+      "Coffee",
+      "Fuel",
+      "Transport",
+      "Salon & Grooming",
+      "Gym",
+      "Mobile",
+      "Internet",
+      "Electricity",
+      "DFCC Credit Card Payment",
+      "HNB Credit Card Payment",
+      "Shopping",
+      "Clothing",
+      "Commercial Bank Credit Card Payment",
+      "Travel",
+      "Medical",
+      "Personal Care",
+      "Family",
+      "Cricket",
+      "Work",
+      "Other"
+    ]
+  },
+  "transactions": [
+    {
+      "id": null,
+      "date": "2026-08-24",
+      "description": "Leyosh Bun for Dinner",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1150.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-25",
+      "description": "Medicine - Doctor Fee",
+      "category": "Medical",
+      "paymentMethod": "Cash",
+      "type": "Expense",
+      "amount": 500.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-25",
+      "description": "Dinner - Submarine(burger House)",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1816.66,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-26",
+      "description": "Bike Paint Advance",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 10000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-26",
+      "description": "Uber - Chintha Wedding",
+      "category": "Transport",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 263.2,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-26",
+      "description": "Indu -  Money",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Income",
+      "amount": 10830.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-26",
+      "description": "Minpay - Indu(x1)",
+      "category": "Mintpay / BNPL",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 4824.35,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-26",
+      "description": "Medihelp - Aiya",
+      "category": "Family",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 2450.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-27",
+      "description": "Dinner - Egg roti",
+      "category": "Food",
+      "paymentMethod": "Cash",
+      "type": "Expense",
+      "amount": 290.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-27",
+      "description": "Soft Drinks - Aiya",
+      "category": "Family",
+      "paymentMethod": "Cash",
+      "type": "Expense",
+      "amount": 250.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-28",
+      "description": "Medical - Lisence Renew",
+      "category": "Other",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 1500.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-28",
+      "description": "License Renew Payment",
+      "category": "Other",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 4500.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-28",
+      "description": "DMT - Parking",
+      "category": "Other",
+      "paymentMethod": "Cash",
+      "type": "Expense",
+      "amount": 150.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-28",
+      "description": "Rotti - Bamba",
+      "category": "Food",
+      "paymentMethod": "Cash",
+      "type": "Expense",
+      "amount": 350.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-28",
+      "description": "Lunch - lunumirisa",
+      "category": "Food",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 700.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-28",
+      "description": "Leyosh - Ice Coffee",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 600.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-28",
+      "description": "Hestia - Hot Chocolate",
+      "category": "Other",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 1100.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-28",
+      "description": "Carnage - KOKO(1st Payment)",
+      "category": "KOKO / BNPL",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 2899.1,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-28",
+      "description": "Fuel - Aiya",
+      "category": "Fuel",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 2000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-28",
+      "description": "Mobitel Reload - WIFI(Data)",
+      "category": "Internet",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 480.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-29",
+      "description": "Uber - Tharu Visit",
+      "category": "Transport",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1172.02,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-29",
+      "description": "Uber - Tharu Visit(Come Home)",
+      "category": "Transport",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 837.08,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-29",
+      "description": "Coca Cola",
+      "category": "Food",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 360.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-29",
+      "description": "Tea avenue - Milo Shake",
+      "category": "Food",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 1815.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-30",
+      "description": "Bike - Paint Final Payment",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 13500.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-30",
+      "description": "Alereix Dark Chocolate Ice Cream",
+      "category": "Food",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 1523.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-30",
+      "description": "KOKO Payment",
+      "category": "KOKO / BNPL",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 2826.67,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-30",
+      "description": "Fuel - My Bike",
+      "category": "Fuel",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 2000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "Highland Milk",
+      "category": "Food",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 260.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "Salary - Aug",
+      "category": "Salary",
+      "paymentMethod": "Commercial Bank",
+      "type": "Income",
+      "amount": 205516.67,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "Commercial Credit Card Payment",
+      "category": "Commercial Bank Credit Card Payment",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 4662.73,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "KOKO -Aug",
+      "category": "KOKO / BNPL",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 25285.3,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "Bakery Sacks -  Jana Garage",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 800.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "HNB Account Transfer",
+      "category": null,
+      "paymentMethod": "Commercial Bank",
+      "type": "Transfer",
+      "amount": 10000.0,
+      "transferTo": "HNB",
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "Cash on Hand",
+      "category": null,
+      "paymentMethod": "Commercial Bank",
+      "type": "Transfer",
+      "amount": 3000.0,
+      "transferTo": "Cash",
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "HNB Credit Card Payment",
+      "category": "HNB Credit Card Payment",
+      "paymentMethod": "HNB",
+      "type": "Expense",
+      "amount": 9642.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "Accario Birthday",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 2117.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "Mobitel Reload - WIFI(Data)",
+      "category": "Internet",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1990.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "Aiya - Transfer (Cricket)",
+      "category": "Cricket",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 810.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "DFCC - Transfer",
+      "category": null,
+      "paymentMethod": "Commercial Bank",
+      "type": "Transfer",
+      "amount": 80000.0,
+      "transferTo": "DFCC Bank",
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "DFCC Credit Card Payment",
+      "category": "DFCC Credit Card Payment",
+      "paymentMethod": "DFCC Bank",
+      "type": "Expense",
+      "amount": 80000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-08-31",
+      "description": "Uber Eats - Dinner",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 531.94,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-01",
+      "description": "Foodcity",
+      "category": "Groceries",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 3356.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-01",
+      "description": "Reload For my personal Data",
+      "category": "Internet",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1600.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-02",
+      "description": "Neil Bakery",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1400.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-02",
+      "description": "Salon",
+      "category": "Salon & Grooming",
+      "paymentMethod": "Cash",
+      "type": "Expense",
+      "amount": 1000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-02",
+      "description": "Dinner - Uber",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 531.94,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-03",
+      "description": "Entertainments - ISH",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 5200.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-03",
+      "description": "Fuel",
+      "category": "Fuel",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 3192.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-04",
+      "description": "Lunch - Neil Bakery",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 710.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-04",
+      "description": "Pick me",
+      "category": "Transport",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 396.92,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-04",
+      "description": "Pick me",
+      "category": "Transport",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 376.39,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-04",
+      "description": "Entertainments",
+      "category": "Other",
+      "paymentMethod": "Cash",
+      "type": "Expense",
+      "amount": 1000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-04",
+      "description": "Neil Bakery",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 350.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-04",
+      "description": "Koko - Chamiya",
+      "category": "KOKO / BNPL",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 5650.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-05",
+      "description": "Bun Club",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 2210.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-05",
+      "description": "Pick me - Brush set",
+      "category": "Transport",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 415.89,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-05",
+      "description": "Ajith Motors Brush Set",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-05",
+      "description": "Neil Bakery",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 170.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-05",
+      "description": "Cocacola - Mora Slam",
+      "category": "Food",
+      "paymentMethod": "Cash",
+      "type": "Expense",
+      "amount": 330.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-05",
+      "description": "Hash - Eat Out",
+      "category": "Eating Out",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 2337.5,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-06",
+      "description": "Pippa - Bottle",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 2850.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-06",
+      "description": "Neil Bakery",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 160.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-06",
+      "description": "Dinner - Uber",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1394.82,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-06",
+      "description": "Avishka party - Chamiya",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 11600.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-06",
+      "description": "Avishka party - Omeli Akka",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 3036.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-08",
+      "description": "Destini Livin Video",
+      "category": "Freelance",
+      "paymentMethod": "Commercial Bank",
+      "type": "Income",
+      "amount": 10000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-09",
+      "description": "Cake - Uber Maneesha",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1497.45,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-09",
+      "description": "Uber Eats - Snack",
+      "category": "Food",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 481.94,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-11",
+      "description": "Night Out _ PAW",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 5000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-11",
+      "description": "Night Out _ Beers",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1440.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-11",
+      "description": "Dinner - Arthurz Pizza",
+      "category": "Food",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 3795.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-12",
+      "description": "Dinner - AL mass",
+      "category": "Food",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 1100.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-12",
+      "description": "Cash Withdrawal",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1500.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-12",
+      "description": "Cash On hand",
+      "category": "Other",
+      "paymentMethod": "Cash",
+      "type": "Income",
+      "amount": 1500.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-12",
+      "description": "Breakfast Egg Rottie",
+      "category": "Food",
+      "paymentMethod": "Cash",
+      "type": "Expense",
+      "amount": 500.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-12",
+      "description": "Ciggerets",
+      "category": "Other",
+      "paymentMethod": "Cash",
+      "type": "Expense",
+      "amount": 670.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-13",
+      "description": "Snacks - Carrom Match",
+      "category": "Food",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 780.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-13",
+      "description": "Fuel",
+      "category": "Fuel",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 3000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-13",
+      "description": "Ice Milo",
+      "category": "Food",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 1400.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-13",
+      "description": "Cash Withdrawal",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-14",
+      "description": "USB HUB",
+      "category": "Work",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 1751.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-14",
+      "description": "Electricity Bill",
+      "category": "Electricity",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 9700.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-14",
+      "description": "Insuarance Bill",
+      "category": "Medical",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 10558.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-14",
+      "description": "Reload - Amma",
+      "category": "Family",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 100.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-14",
+      "description": "Underwarex9 - Charith",
+      "category": "Personal Care",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 4500.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-14",
+      "description": "Carrom Entry Fee",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1250.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-14",
+      "description": "Janath Aiya Bike Repair (Brush set )",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 7000.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-15",
+      "description": "Dinner Egg Rotti",
+      "category": "Food",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 250.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-17",
+      "description": "Jana Underware x5",
+      "category": "Other Income",
+      "paymentMethod": "Commercial Bank",
+      "type": "Income",
+      "amount": 5300.0,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-17",
+      "description": "ChatGpt Subscription",
+      "category": "Other",
+      "paymentMethod": "Commercial Bank",
+      "type": "Expense",
+      "amount": 1723.8,
+      "transferTo": null,
+      "notes": null
+    },
+    {
+      "id": null,
+      "date": "2026-09-18",
+      "description": "Snacks Neil bakery",
+      "category": "Food",
+      "paymentMethod": "DFCC Credit Card",
+      "type": "Expense",
+      "amount": 590.0,
+      "transferTo": null,
+      "notes": null
+    }
+  ]
+};
