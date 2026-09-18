@@ -55,14 +55,23 @@
   }
 
   function normaliseState(raw) {
+    const rawCategories = raw.categories || {};
+    const accounts = Array.isArray(raw.accounts) ? raw.accounts : [];
+    const creditCards = Array.isArray(raw.creditCards) ? raw.creditCards : [];
     const base = {
       version: 1,
       currency: "LKR",
-      accounts: raw.accounts || [],
-      creditCards: raw.creditCards || [],
-      debts: raw.debts || [],
-      categories: raw.categories || { expense: [], income: [], transactions: [] },
-      transactions: raw.transactions || []
+      accounts,
+      creditCards,
+      debts: Array.isArray(raw.debts) ? raw.debts : [],
+      categories: {
+        expense: Array.isArray(rawCategories.expense) ? rawCategories.expense : [],
+        income: Array.isArray(rawCategories.income) ? rawCategories.income : [],
+        transactions: Array.isArray(rawCategories.transactions) ? rawCategories.transactions : [],
+        bankCashAccounts: Array.isArray(rawCategories.bankCashAccounts) ? rawCategories.bankCashAccounts : accounts.map(a => a.name).filter(Boolean),
+        creditCards: Array.isArray(rawCategories.creditCards) ? rawCategories.creditCards : creditCards.map(c => c.name).filter(Boolean)
+      },
+      transactions: Array.isArray(raw.transactions) ? raw.transactions : []
     };
     base.transactions = base.transactions.map((t, i) => ({
       id: t.id || `seed_${i + 1}`,
@@ -322,7 +331,12 @@
           <input id="txSearch" class="field" placeholder="Search description or notes">
           <select id="txType" class="select compact"><option value="">All types</option><option>Income</option><option>Expense</option><option>Transfer</option></select>
           <select id="txCategory" class="select compact"><option value="">All categories</option>${state.categories.transactions.map(c => `<option>${escapeHtml(c)}</option>`).join("")}</select>
-          <select id="txPayment" class="select compact"><option value="">All payment methods</option>${[...state.categories.bankCashAccounts, ...state.categories.creditCards].map(c => `<option>${escapeHtml(c)}</option>`).join("")}</select>
+          <select id="txPayment" class="select compact"><option value="">All payment methods</option>${[...new Set([
+            ...getAccounts().map(a => a.name),
+            ...getCards().map(c => c.name),
+            ...(state.categories.bankCashAccounts || []),
+            ...(state.categories.creditCards || [])
+          ].filter(Boolean))].map(c => `<option>${escapeHtml(c)}</option>`).join("")}</select>
           <input id="txFrom" type="date" class="field compact" title="From date">
           <input id="txTo" type="date" class="field compact" title="To date">
         </div>
@@ -580,12 +594,22 @@
   }
 
   function paymentOptions(current) {
-    const values = [...new Set([...state.categories.bankCashAccounts, ...state.categories.creditCards])];
-    return values.map(p=>`<option ${p===current?"selected":""}>${escapeHtml(p)}</option>`).join("");
+    const values = [...new Set([
+      ...getAccounts().map(a => a.name),
+      ...getCards().map(c => c.name),
+      ...(state.categories.bankCashAccounts || []),
+      ...(state.categories.creditCards || [])
+    ].filter(Boolean))];
+    return `<option value="">Select payment method</option>` + values.map(p=>`<option ${p===current?"selected":""}>${escapeHtml(p)}</option>`).join("");
   }
 
   function transferOptions(current) {
-    const values = [...new Set([...state.categories.bankCashAccounts, ...state.categories.creditCards])];
+    const values = [...new Set([
+      ...getAccounts().map(a => a.name),
+      ...getCards().map(c => c.name),
+      ...(state.categories.bankCashAccounts || []),
+      ...(state.categories.creditCards || [])
+    ].filter(Boolean))];
     return `<option value="">Select destination</option>` + values.map(p=>`<option ${p===current?"selected":""}>${escapeHtml(p)}</option>`).join("");
   }
 
@@ -699,10 +723,30 @@
     }catch(error){alert(`Import failed: ${error.message}`);}finally{e.target.value="";}
   });
 
-  document.querySelectorAll(".nav-item").forEach(btn=>btn.addEventListener("click",()=>showView(btn.dataset.view)));
+  const mobileMenu = document.getElementById("mobileMenu");
+  const mobileBackdrop = document.getElementById("mobileBackdrop");
+
+  function setMobileMenu(open) {
+    document.body.classList.toggle("mobile-nav-open", open);
+    if (mobileMenu) {
+      mobileMenu.setAttribute("aria-expanded", String(open));
+      mobileMenu.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+      mobileMenu.textContent = open ? "✕" : "☰";
+    }
+    if (mobileBackdrop) mobileBackdrop.setAttribute("aria-hidden", String(!open));
+  }
+
+  document.querySelectorAll(".nav-item").forEach(btn=>btn.addEventListener("click",()=>{
+    showView(btn.dataset.view);
+    setMobileMenu(false);
+  }));
+  if (mobileMenu) mobileMenu.addEventListener("click",()=>setMobileMenu(!document.body.classList.contains("mobile-nav-open")));
+  if (mobileBackdrop) mobileBackdrop.addEventListener("click",()=>setMobileMenu(false));
+  window.addEventListener("resize",()=>{ if (window.innerWidth > 900) setMobileMenu(false); });
+  document.addEventListener("keydown",e=>{ if(e.key === "Escape") setMobileMenu(false); });
   document.getElementById("quickAdd").addEventListener("click",()=>openTransactionModal());
-  document.getElementById("quickAddSide").addEventListener("click",()=>openTransactionModal());
-  document.addEventListener("click",e=>{const jump=e.target.closest("[data-view-jump]");if(jump)showView(jump.dataset.viewJump);});
+  document.getElementById("quickAddSide").addEventListener("click",()=>{setMobileMenu(false);openTransactionModal();});
+  document.addEventListener("click",e=>{const jump=e.target.closest("[data-view-jump]");if(jump){showView(jump.dataset.viewJump);setMobileMenu(false);}});
 
   renderCurrentView();
 })();
